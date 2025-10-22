@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Рядки, що біжать</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+    }
+
+    marquee {
+      display: block;
+      margin: 20px auto;
+      height: 50px;
+      line-height: 50px;
+      width: 70%;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .marq1 {
+      background-color: #ea4f2c;
+      color: #ffffff;
+      font-family: "Comic Sans MS", cursive;
+      font-size: 18px;
+    }
+
+    .marq2 {
+      background-color: #ffaa2a;
+      color: #883119;
+      font-family: "Courier New", monospace;
+      font-size: 20px;
+    }
+
+    .marq3 {
+      background-color: #f4dd5a;
+      color: #71310c;
+      font-family: "Georgia", serif;
+      font-size: 18px;
+    }
+
+    .marq4a {
+      background-color: #94e35b;
+      color: #034e41;
+      font-family: "Tahoma", sans-serif;
+      font-size: 18px;
+    }
+
+    .marq4b {
+      background-color: #6b8be2;
+      color: #21315e;
+      font-family: "Lucida Console", monospace;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <marquee class="marq1" behavior="alternate">
+    Текст коливається з боку в бік
+  </marquee>
+
+  <marquee class="marq2" direction="right" scrollamount="10" behavior="scroll">
+    Текст пробігає справа наліво та з’являється знову
+  </marquee>
+
+  <marquee class="marq3" direction="left" behavior="slide">
+    Текст пробігає зліва направо та зупиняється
+  </marquee>
+
+  <marquee class="marq4a" behavior="scroll" scrollamount="3" scrolldelay="150">
+    Повільний рух з запізненням
+  </marquee>
+
+  <marquee class="marq4b" behavior="alternate" scrollamount="15" scrolldelay="30">
+    Швидкий рух без запізнення
+  </marquee>
+
+</body>
+</html>

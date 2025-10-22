@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Рядки, що біжать</title>
+  <style>
+    body {
+      background-color: #f0f8ff;
+    }
+
+    marquee {
+      display: block;
+      margin: 20px auto;
+      height: 200px;
+      line-height: 50px;
+      width: 70%;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .marq1 {
+      background-color: #ea4f2c;
+      color: #ffffff;
+      font-family: "Comic Sans MS", cursive;
+      font-size: 18px;
+    }
+
+    .marq2 {
+      background-color: #ffaa2a;
+      color: #883119;
+      font-family: "Courier New", monospace;
+      font-size: 20px;
+    }
+
+    .marq3 {
+      background-color: #f4dd5a;
+      color: #71310c;
+      font-family: "Georgia", serif;
+      font-size: 18px;
+    }
+
+    .marq4a {
+      background-color: #94e35b;
+      color: #034e41;
+      font-family: "Tahoma", sans-serif;
+      font-size: 18px;
+    }
+
+    .marq4b {
+      background-color: #6b8be2;
+      color: #21315e;
+      font-family: "Lucida Console", monospace;
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<marquee class="marq1" direction="down" behavior="alternate">
+  <figure style="text-align:center; margin:0;">
+    <figcaption>
+      Текст та рисунки у рядку коливаються
+    </figcaption>
+    <img src="image/cat1.png" height="300">
+    <img src="image/cat2.png" height="300">
+    <img src="image/cat3.png" height="300">
+  </figure>
+</marquee>
+
+
+  <marquee class="marq2" direction="up" scrollamount="10" behavior="scroll">
+     <figure style="text-align:center; margin:0;">
+    <figcaption>
+    Послідовність рисунків пробігає знизу до гори та з’являється знову.
+    </figcaption>
+    <img src="image/cat1.png" height="300">
+    <img src="image/cat2.png" height="300">
+    <img src="image/cat3.png" height="300">
+  </figure>
+  </marquee>
+
+ <marquee class="marq3" direction="down" behavior="slide">
+  <figure style="text-align: center; margin: 0; padding: 0;">
+    <img src="image/cat1.png" height="40" style="display: block; margin: 0 auto 10px;">
+    <img src="image/cat2.png" height="40" style="display: block; margin: 0 auto 10px;">
+    <img src="image/cat3.png" height="40" style="display: block; margin: 0 auto;">
+    <figcaption style="margin-top: 10px; font-weight: 600;">
+      Послідовність рисунків пробігає згори до низу із зупинкою у границі області.
+    </figcaption>
+  </figure>
+</marquee>
+
+
+  <marquee class="marq4a" direction="up" behavior="scroll" scrollamount="3" scrolldelay="150">
+      <figure style="text-align:center; margin:0;">
+    <figcaption>
+    Повільний рух з запізненням
+    </figcaption>
+    <img src="image/cat1.png" height="300">
+    <img src="image/cat2.png" height="300">
+    <img src="image/cat3.png" height="300">
+  </figure>
+  </marquee>
+
+  <marquee class="marq4b" direction="down" behavior="alternate" scrollamount="15" scrolldelay="30">
+      <figure style="text-align:center; margin:0;">
+    <figcaption>
+    Швидкий рух без запізнення
+    </figcaption>
+    <img src="image/cat1.png" height="300">
+    <img src="image/cat2.png" height="300">
+    <img src="image/cat3.png" height="300">
+  </figure>
+  </marquee>
+
+</body>
+</html>
